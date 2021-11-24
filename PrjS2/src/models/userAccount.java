@@ -23,6 +23,17 @@ public class userAccount {
     private Date birthDate;
     private String emplCode;
 
+    public userAccount(String fullname, String username, String pasword, String email, String address, String phoneNumber, Date birthDate, String emplCode) {
+        this.fullname = fullname;
+        this.username = username;
+        this.pasword = pasword;
+        this.email = email;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.birthDate = birthDate;
+        this.emplCode = emplCode;
+    }
+
     public userAccount() {
     }
 
@@ -48,11 +59,6 @@ public class userAccount {
 
     public void setPasword(String pasword) {
         this.pasword = pasword;
-    }
-
-    @Override
-    public String toString() {
-        return "userAccount{" + "fullname=" + fullname + ", username=" + username + ", pasword=" + pasword + ", email=" + email + ", address=" + address + ", phoneNumber=" + phoneNumber + ", birthDat=" + birthDate + ", emplCode=" + emplCode + '}';
     }
 
     public String getEmail() {
@@ -95,18 +101,6 @@ public class userAccount {
         this.emplCode = emplCode;
     }
 
-    public userAccount(String fullname, String username, String pasword, String email, String address, String phoneNumber, Date birthDate, String emplCode) {
-        this.fullname = fullname;
-        this.username = username;
-        this.pasword = pasword;
-        this.email = email;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.birthDate = birthDate;
-        this.emplCode = emplCode;
-    }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-    }
+   
 
 }
